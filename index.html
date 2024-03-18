@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE DEVELOPER</p>
+                <h1>Hi, I'm <span>Dipanshu</span> Raj</h1>
+            </div>
+        </div>
+    </div>
+<!-- -----about----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                
+                    <p>Computer science undergraduate with 
+                        practical experience in the development of 
+                        full-stack web applications. Proficient in 
+                        data structures and backend engineering.
+                        Excellent teamwork, interpersonal and 
+                        communication skills. Looking to start a 
+                        career as an entry-level professional with 
+                        a reputed IT company</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('technical skills')">TECHNICAL SKILLS</p>
+                        <p class="tab-links" onclick="opentab('project')">PROJECT</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    </div>
+                    <div class="tab-contents active-tab" id ="technical skills"> 
+                        
+                        <ul>
+                            <li><span>Programming languages:
+                            </span><br>C++, Java, Python</li>
+                            <br>
+                            <li><span>Web Technologies:</span><br>HTML, CSS, JavaScript, .Net</li>
+                            <br>
+                            <li><span>Data Management</span><br>MySQL,Oracle</li>
+                            <br>
+                            <li><span>Amazon Web Services</span><br>EC2, S3 bucket, RDS, Scaling</li>
+                            <br>
+                            <li><span>DevOps</span><br>Docker, Git & GitHub</li>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id= "project">
+                        
+                        <ul>
+                            <li><span>Notion-Clone:<br>
+                            </span><br>Domain: HTML5, CSS, JavaScript
+                        <br>Features: Clone of Notion, featuring a task management system with drag-and-drop tasks, task details pages, and storage functionality</li>
+                            <br>
+                            <li><span>Amazon-clone:<br></span><br>Domain: HTML5, CSS, CSS-flexfox.
+                            <br>Features: Modern UI clone and build a static front-end of Amazon shopping Website.</li>
+                            <br>
+                            <li><span>Courier-management-system<br></span><br>Domain: Java
+                            <br>Features: Create Shipment, Track Shipment, View All Shipments.</li>
+                            <br>
+                            <li><span>Hangman-Game<br></span><br>Domain: Python, Tkinter GUI toolkit.
+                            <br>Features:Hangman Image guessing built using Python Tkinter Library</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id ='education'>
+                        
+                        <ul>
+                            <li><span>B.Tech in Computer Science</span><br><br>Lovely Professional University | Jalandhar, Punjab.
+                                <br>CGPA: 7.23(currently) | Expected Graduation: 2025
+                            </li>
+                            <br>
+                            <li><span>Diploma</span><br><br>Government Polytechnic Sahibganj | Sahibganj, Jharkhand.
+                            <br>CGPA: 8.57</li>
+                            <br>
+                            <li><span>Secondary School[10th] </span><br><br>Kailash Rai Saraswati Vidya Mandir | Koderma, Jharkhand.
+                            <br>CGPA: 8.1 </li>
+                            <br>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src = main.js></script> 
+</body>
+</html>
