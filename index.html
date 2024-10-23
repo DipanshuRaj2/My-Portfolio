@@ -4,175 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ae5fb2de9d.js" crossorigin="anonymous"></script>
+    <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
     <div id="header">
         <div class="container">
+            <!-- <img src="images/img.jpg" alt="Your image description"> -->
             <nav>
-                <img src="./Images/logo.jpg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                <img src="images/Logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-square-caret-down" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>SOFTWARE DEVELOPER</p>
-                <h1>Hi, I'm <span>Dipanshu</span> Raj</h1>
+
+            <div class="parent-header">
+                <div class="header-text">
+                    <p> Software Developer | Devops Enthusiast</p>
+                    <h1>Hello, I'm <span>Dipanshu</span> Raj </h1>
+                </div>
+                <div class="header-img">
+                    <img src="images/img1-Photoroom (1).jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
-    <!-- -----about----- -->
-    <div id="about">
+
+    <!-------------------------- About Section--------------------- -->
+
+    <div class="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./Images/user.jpg">
+                    <img src="images/new1.jpg" alt="check your network">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a computer science undergraduate,
+                        I bring practical experience in front-end development and backend engineering,
+                        with proficiency in data structures. Recognized for excellent teamwork and communication
+                        skills, I am eager to begin my career with a reputable IT company. Additionally,
+                        I am an aspiring cloud computing enthusiast, proficient in DevOps.
+                        Dedicated to mastering cloud technology complexities, I aim to optimize infrastructure
+                        and streamline deployment processes through automation, contributing to industry
+                        innovation.
 
-                    <p>Computer science undergraduate with
-                        practical experience in the development of
-                        full-stack web applications. Proficient in
-                        data structures and backend engineering.
-                        Excellent teamwork, interpersonal and
-                        communication skills. Looking to start a
-                        career as an entry-level professional with
-                        a reputed IT company</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('technical skills')">TECHNICAL SKILLS</p>
-                        <p class="tab-links" onclick="opentab('project')">PROJECT</p>
-                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    <div class="tabtitles">
+                        <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="technical skills">
-
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Programming languages:
-                                </span><br>C++, Java, Python</li>
-                            <br>
-                            <li><span>Web Technologies:</span><br>HTML, CSS, JavaScript, .Net</li>
-                            <br>
-                            <li><span>Data Management</span><br>MySQL,Oracle</li>
-                            <br>
-                            <li><span>Amazon Web Services</span><br>EC2, S3 bucket, RDS, Scaling</li>
-                            <br>
-                            <li><span>DevOps</span><br>Docker, Git & GitHub</li>
-                            <br>
+                            <li><span>
+                                    <h3>Front-End Development</h3>
+                                </span>HTML, CSS, Javascript</li>
+                            <li><span>
+                                    <h3>Amazon Web Service</h3>
+                                </span>EC2, S3 Bucket, RDS, Scaling</li>
+                            <li><span>
+                                    <h3>Dev-Ops</h3>
+                                </span>Docker , Git & Github</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="project">
-
+                    <div class="tab-contents" id="Projects">
                         <ul>
-                            <li><span>Amazon-clone:<br></span><br>Domain: HTML5, CSS, CSS-flexfox.
-                                <br>Features: Modern UI clone and build a static front-end of Amazon shopping Website.
+                            <li><span>
+                                    <h3>Jenkins_Pipeline_Master </h3>
+                                </span>Configured Jenkins to automate build, test, and deployment processes by linking it with GitHub 
+                                for continuous integration.
                             </li>
-                            <br>
-                            <li><span>Courier-management-system<br></span><br>Domain: Java
-                                <br>Features: Create Shipment, Track Shipment, View All Shipments.
-                            </li>
-                            <br>
-                            <li><span>Hangman-Game<br></span><br>Domain: Python, Tkinter GUI toolkit.
-                                <br>Features:Hangman Image guessing built using Python Tkinter Library
-                            </li>
-
-                        </ul>
+                            <li><span>
+                                    <h3>Amazon Clone </h3>
+                                </span>Modern UI clone and build a static front-end of Amazon shopping Website.</li>
+                            <li><span>
+                                    <h3>Courier Management Service</h3>
+                                </span>Track, add,cancel and for Admin: Add,Remove and Track Package</li>
+                            <li><span>
+                                    <h3>Hangman</h3>
+                                </span>Hangman Image guessing built using Python Tkinter Library</li>
                     </div>
-                    <div class="tab-contents" id='education'>
-
+                    <div class="tab-contents" id="Education">
                         <ul>
-                            <li><span>B.Tech in Computer Science</span><br><br>Lovely Professional University |
-                                Jalandhar, Punjab.
-                                <br>CGPA: 7.23(currently) | Expected Graduation: 2025
+                            <li><span>
+                                    <h3>Bachelor of Technology </h3>
+                                </span>Computer Science & Enginnering <br> CGPA: 7.3 (currently) | Expected Graduation:
+                                2025</li>
+                            <li><span>
+                                    <h3>Diploma</h3>
+                                </span>Goverment Polytechnic SahibGanj
+                                <br>CGPA: 8.56 | 2019 - 2022
                             </li>
-                            <br>
-                            <li><span>Diploma</span><br><br>Government Polytechnic Sahibganj | Sahibganj, Jharkhand.
-                                <br>CGPA: 8.57
-                            </li>
-                            <br>
-                            <li><span>Secondary School[10th] </span><br><br>Kailash Rai Saraswati Vidya Mandir |
-                                Koderma, Jharkhand.
-                                <br>CGPA: 8.1
-                            </li>
-                            <br>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-    <!-- ------------services-------- -->
-    <div id="Projects">
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            // for(tablink of tablinks){
+            //   tablink.classList.remove("active-link");
+            // }
+        }
+    </script>
+
+    <!-- ----------------services----------------------- -->
+    <div id="services">
         <div class="container">
-
-            <h1 class="sub-title">My Project</h1>
-            <div class="projects-list">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
                 <div>
-            
-                    <i class="fa-brands fa-amazon fa-beat"></i>
-                    <br>
-                    <h2>Amazon-Clone</h2>
-                    <p style="font-size: 20px;">Developed a fronted part of Amazon clone static website.</p>
-                    <a href="#">Refer Below to My Work</a>
+                    <i class="fa-brands fa-jenkins"></i>
+                    <h2>Jenkins_Pipeline Master</h2>
+                    <p>Configured Jenkins to automate build, test, and deployment processes by linking it with GitHub 
+                        for continuous integration</p>
+                    <h3>Refer Below to My Work</h3>
                 </div>
                 <div>
-                    <i class="fa-solid fa-truck fa-beat"></i>
-                    <h2>Courier-management-system</h2>
-                    <p style="font-size: 20px;">Console-based-Application <br>This project is a simple courier management system developed using Java. It allows users to create and manage couriers, track shipments, and generate reports. </p>
-                    <a href="#">Refer Below to My Work</a>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Hangman Image Guessing Game</h2>
+                    <p>Guess letters to reveal image, enhancing vocabulary and visual recognition skills in interactive
+                        gameplay.</p>
+                    <h3>Refer Below to My Work</h3>
                 </div>
                 <div>
-                    <i class="fa-solid fa-gamepad fa-beat"></i>
-                    <h2>Hangman-Guessing Game</h2>
-                    <p style="font-size: 20px;">Guess letters to reveal image, enhancing vocabulary and visual recognition skills in interactive gameplay.
-                    </p>
-                    <a href="#">Refer Below to My Work</a>
+                    <i class="fa-brands fa-amazon"></i>
+                    <h2>Amazon Website Clone</h2>
+                    <p> HTML/CSS replica offers intuitive browsing, mimicking original platform's layout and
+                        functionality.</p>
+                    <h3>Refer Below to My Work</h3>
                 </div>
-                
+                <div>
+                    <i class="fa-solid fa-people-carry-box"></i>
+                    <h2>Courier Management System</h2>
+                    <p> Track, add,cancel and for Admin: Add,Remove and Track Package</p>
+                    <h3>Refer Below to My Work</h3>
+                </div>
             </div>
         </div>
     </div>
 
-<!-- ------portfolio----- -->
+    <!-- -------------portfolio--------------------- -->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="./Images/work-1.png">
-                    <div class ="layer">
-                        <h3>Amazon-Clone</h3>
-                        <p>Aimed to replicate the user interface and functionality of the Amazon website</p>
-                        <a href="https://dipanshuraj2.github.io/Amazon-Clone/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+                    <img src="images/work-1.png" alt="check network connection">
+                    <div class="layer">
+                        <h3>Jenkins Pipeline<br>Master</h3>
+                        <p>Configured Jenkins to automate build, test, and deployment processes by linking it with GitHub 
+                            for continuous integration.</p>
+                        <a href="https://github.com/DipanshuRaj2/Jenkins_Pipeline_Master" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./Images/work-2.png">
-                    <div class ="layer">
-                        <h3>Courier-Management-System</h3>
-                        <p>Console-based-Application <br>Features: Create Shipment, Track Shipment, View All Shipments of the Packages.</p>
-                        <a href="dipanshuraj2.github.io/courier-management-system/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./Images/work-3.jpg">
-                    <div class ="layer">
+                    <img src="images/work-2.jpg" alt="check network connection">
+                    <div class="layer">
                         <h3>Hangman-Game</h3>
-                        <p> The game features an intuitive graphical user interface (GUI) and utilizes images to depict the progress of the game.</p>
-                        <a href="blackycode50.github.io/hangman-game/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+                        <p>Interactive hangman game enhances vocabulary and visual recognition skills.</p>
+                        <a href="https://github.com/DipanshuRaj2/Hangman-Game" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="check network connection">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>HTML/CSS replica offers intuitive browsing, mimicking original platform's layout.</p>
+                        <a href="https://github.com/DipanshuRaj2/Amazon_Clone" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/courier-img.jpg" alt="check network connection">
+                    <div class="layer">
+                        <h3>Courier Management System</h3>
+                        <p>Add,track the Package by just a single click</p>
+                        <a href="" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
             <a href="#" class="btn">See more</a>
         </div>
     </div>
-    <script src=main.js></script>
+
+    <!-- -----------------------------Contact----------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> dipanshurajjmt2@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 91XXXXXX3</p>
+                    <p><a href="https://x.com/Dipanshurajjmt" target="_blank"><i 
+                        class="fa-brands fa-square-x-twitter"></i></a>Dipanshurajjmt</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/dipanshuraj2/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/DipanshuRaj2" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/_dipanshu_raj911"><i 
+                               class="fa-brands fa-square-instagram"></i></a>
+    
+                    </div>
+                            <a href="images/Cloud_dipanshu_CV_General.pdf" download class="btn btn2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message to Dipanshu"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Dipanshu | Made with <i class="fa-solid fa-heart"></i> by Dipanshu :) </p>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
